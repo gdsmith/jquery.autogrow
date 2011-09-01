@@ -63,7 +63,7 @@
     function initElement($e) {
       $e.data("autogrow-min", options.minHeight || parseNumericValue($e.css('min-height')) || 0);
       $e.data("autogrow-max", options.maxHeight || parseNumericValue($e.css('max-height')) || 99999);
-      $e.data("autogrow-line-height", options.lineHeight || parseNumericValue($e.css('line-height')));
+      $e.data("autogrow-line-height", options.lineHeight || parseNumericValue($e.css('line-height')) || 1);
       resize($e);
     };
     
